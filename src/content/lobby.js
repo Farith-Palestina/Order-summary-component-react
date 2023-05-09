@@ -29,7 +29,9 @@ function Lobby(){
                     </div>
                 </div>
                 <div className='payment-button-container'>
-                    <input type='button' value='Proceed to Payment'/>
+                    <button>
+                        Proceed to Payment
+                    </button>
                 </div>
                 <div className='cancel-order-container'>
                     <a href=' '>Cancel Order</a>
