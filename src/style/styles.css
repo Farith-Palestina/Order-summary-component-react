@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    font-family: 'RedHatDisplay';
+}
+
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('../assets/fonts/RedHatDisplay.ttf');
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('../assets/images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 2.5% 0 0 0;
+}
+
+.container{
+    margin: auto;
+    width: 30%;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0 0 30px 0;
+    box-shadow: 0px 20px 60px -20px hsl(245, 75%, 80%);
+}
+
+.image-container{
+    width: 100%;
+    padding: 0 0 35px 0;
+}
+
+.image-container img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.order-summary-title-container{
+    width: 100%;
+    padding: 0 0 25px 0;
+}
+
+.order-summary-title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 28px;
+    text-align: center;
+}
+
+.order-summary-description-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order-summary-description{
+    width: 70%;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    font-size: 16px;
+}
+
+.plan-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+}
+
+.columns-plan-container{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    width: 72.5%;
+    background: hsl(225, 100%, 98%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.plan-music-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.annual-plan-container{
+    width: 100px;
+    justify-content: flex-start;
+}
+
+.annual-title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.annual-price{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.change-plan-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.change-plan-container a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    transition: all 500ms ease;
+}
+
+.change-plan-container a:hover{
+    text-decoration: none;
+    color: hsl(245, 75%, 72%);
+}
+
+.payment-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px 0 20px 0;
+}
+
+.payment-button-container input{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 81.5%;
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0px 12.5px 20px -7.5px hsl(245, 75%, 80%);
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.payment-button-container input:hover{
+    background-color: hsl(245, 75%, 72%);
+}
+
+.cancel-order-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.cancel-order-container a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.cancel-order-container a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+.footer-page{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-page p a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    transition: all 500ms ease;
+}
+
+.footer-page p a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 768px){
+
+    body{
+        background-color: hsl(225, 100%, 94%);
+        background-image: url('../assets/images/pattern-background-mobile.svg');
+        background-repeat: no-repeat;
+        height: 100%;
+        padding: 5% 0 0 0;
+    }
+
+    .container{
+        margin: auto;
+        width: 90%;
+        border-radius: 20px;
+        background-color: hsl(0, 0%, 100%);
+        padding: 0 0 30px 0;
+        box-shadow: 0px 20px 60px -20px hsl(245, 75%, 80%);
+    }
+
+    .annual-plan-container{
+        padding: 5px 0 0 10px;
+        
+    }
+
+    .annual-title{
+        font-size: 14.5px;
+    }
+    
+    .annual-price{
+        font-size: 14.5px;
+    }
+
+    .cancel-order-container{
+        padding: 0px 0 0 0;
+    }
+
+    .footer-page{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
